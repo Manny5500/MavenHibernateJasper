@@ -1,0 +1,99 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.mycompany</groupId>
+  <artifactId>mavenproject5</artifactId>
+  <packaging>war</packaging>
+  <version>1.0-SNAPSHOT</version>
+
+  <name>mavenproject5</name>
+  <url>http://maven.apache.org</url>
+
+  <dependencies>
+    <dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>servlet-api</artifactId>
+      <version>2.5</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>javax.servlet.jsp</groupId>
+      <artifactId>jsp-api</artifactId>
+      <version>2.1</version>
+      <scope>provided</scope>
+    </dependency>
+    
+    <!-- Hibernate Core -->
+    <dependency>
+        <groupId>org.hibernate</groupId>
+        <artifactId>hibernate-core</artifactId>
+        <version>3.6.10.Final</version>
+    </dependency>
+
+    <!-- Hibernate Entity Manager (JPA) -->
+    <dependency>
+        <groupId>org.hibernate</groupId>
+        <artifactId>hibernate-entitymanager</artifactId>
+        <version>3.6.10.Final</version>
+    </dependency>
+
+    <!-- JDBC Connection Pool (e.g., C3P0) -->
+    <dependency>
+        <groupId>com.mchange</groupId>
+        <artifactId>c3p0</artifactId>
+        <version>0.9.5.2</version>
+    </dependency>
+
+    <!-- MySQL JDBC driver -->
+    <dependency>
+        <groupId>mysql</groupId>
+        <artifactId>mysql-connector-java</artifactId>
+        <version>8.0.33</version>
+    </dependency>
+
+    <!-- Log4j for logging -->
+    <dependency>
+        <groupId>log4j</groupId>
+        <artifactId>log4j</artifactId>
+        <version>1.2.17</version>
+    </dependency>
+    <dependency>
+      <groupId>com.guicedee.services</groupId>
+      <artifactId>javax.servlet-api</artifactId>
+      <version>1.0.9.14-jre14</version>
+      <type>jar</type>
+    </dependency>
+    
+    
+    <!-- JasperReports Core Dependency -->
+    <dependency>
+        <groupId>net.sf.jasperreports</groupId>
+        <artifactId>jasperreports</artifactId>
+        <version>6.20.0</version> <!-- Use the latest version -->
+    </dependency>
+
+    <!-- JasperReports PDF Export Dependency (for exporting reports to PDF) -->
+    <dependency>
+        <groupId>net.sf.jasperreports</groupId>
+        <artifactId>jasperreports-fonts</artifactId>
+        <version>6.20.0</version> <!-- Use the latest version -->
+    </dependency>
+    
+    
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>2.0.2</version>
+        <configuration>
+          <source>1.8</source>
+          <target>1.8</target>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>
